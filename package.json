@@ -1,0 +1,28 @@
+{
+  "name": "larium",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "dev": "turbo run dev --filter @apps/larium",
+    "start": "turbo run start --filter @apps/larium",
+    "build": "turbo run build",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "check-types": "turbo run check-types",
+    "prepare": "husky",
+    "clean": "pnpm -r exec rm -rf dist",
+    "clean build": "pnpm clean && pnpm build"
+  },
+  "devDependencies": {
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "turbo": "^2.5.2",
+    "typescript": "^5.8.3",
+    "eslint": "^9.26.0",
+    "lint-staged": "^15.5.2"
+  },
+  "packageManager": "pnpm@10.8.0",
+  "engines": {
+    "node": ">=18"
+  }
+}
